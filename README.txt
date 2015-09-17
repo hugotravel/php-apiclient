@@ -1,5 +1,6 @@
 PHP library for Hugo Travel API v1
 
+http://hugotravelclub.com
 
 Created on 2015-09-11 at 13:21:56 UTC
 
