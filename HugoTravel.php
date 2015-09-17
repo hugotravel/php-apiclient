@@ -47,7 +47,7 @@ class hugo_travel_club_appspot_com_Service_HugoTravel extends Google_Service
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://hugo-travel-club.appspot.com/_ah/api/';
+    $this->rootUrl = 'https://hugo-travel-club.appspot.com/_ah/api';
     $this->servicePath = 'hugotravel/v1/';
     $this->version = 'v1';
     $this->serviceName = 'hugotravel';
