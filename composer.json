@@ -3,7 +3,7 @@
     "description": "Client Library for the Hugo Travel API",
     "keywords": ["hugotravel"],
     "type": "library",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "require": {
         "php": ">=5.3.0",
         "google/apiclient": "1.1.*"
