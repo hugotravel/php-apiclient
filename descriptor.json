@@ -1,10 +1,10 @@
 {
   "files": [
     {
-      "downloadUrl": "/downloads/hugotravel/v1/20150911132156/php/1.1.4/hugo_travel_club_appspot_com-hugotravel-v1-20150911132156-php-1.1.4-src.zip", 
+      "downloadUrl": "/downloads/hugotravel/v1/20150918081152/php/1.1.4/hugo_travel_club_appspot_com-hugotravel-v1-20150918081152-php-1.1.4-src.zip", 
       "path": "", 
       "type": "source", 
-      "timestamp": "2015-09-11 13:21"
+      "timestamp": "2015-09-18 08:11"
     }
   ], 
   "ownerDomain": "hugo_travel_club.appspot.com", 
@@ -29,6 +29,6 @@
   "language": "php", 
   "title": "Hugo Travel API", 
   "version": "v1", 
-  "revision": 20150911132156, 
+  "revision": 20150918081152, 
   "modulePath": "com/appspot/hugo_travel_club"
 }
