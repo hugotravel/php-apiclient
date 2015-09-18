@@ -1337,16 +1337,28 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersWorkflowMessagesWo
 {
   protected $collection_key = 'items';
   protected $internal_gapi_mappings = array(
+        "archiveUrl" => "archive_url",
         "destinationId" => "destination_id",
+        "unsubscriptionUrl" => "unsubscription_url",
   );
+  public $archiveUrl;
   public $destinationId;
   public $id;
   protected $itemsType = 'Hugo_Travel_Club_Appspot_Com_Service_HugoTravel_HandlersWorkflowMessagesWorkflowItemMessage';
   protected $itemsDataType = 'array';
   public $locale;
   public $name;
+  public $unsubscriptionUrl;
 
 
+  public function setArchiveUrl($archiveUrl)
+  {
+    $this->archiveUrl = $archiveUrl;
+  }
+  public function getArchiveUrl()
+  {
+    return $this->archiveUrl;
+  }
   public function setDestinationId($destinationId)
   {
     $this->destinationId = $destinationId;
@@ -1386,6 +1398,14 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersWorkflowMessagesWo
   public function getName()
   {
     return $this->name;
+  }
+  public function setUnsubscriptionUrl($unsubscriptionUrl)
+  {
+    $this->unsubscriptionUrl = $unsubscriptionUrl;
+  }
+  public function getUnsubscriptionUrl()
+  {
+    return $this->unsubscriptionUrl;
   }
 }
 
