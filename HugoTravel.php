@@ -127,6 +127,10 @@ class hugo_travel_club_appspot_com_Service_HugoTravel extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'is_subscribe' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
                 'page' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -356,6 +360,7 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_Subscriber_Resource extend
    *
    * @opt_param string workflow_id
    * @opt_param string limit
+   * @opt_param bool is_subscribe
    * @opt_param string page
    * @return hugo_travel_club_appspot_com_Service_HugoTravel_HandlersSubscriberMessagesSubscriberListResponse
    */
@@ -963,11 +968,14 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersSubscriberMessages
 {
   protected $internal_gapi_mappings = array(
         "arrivalDate" => "arrival_date",
+        "lastEmailSendDate" => "last_email_send_date",
         "workflowId" => "workflow_id",
   );
   public $arrivalDate;
   public $email;
   public $id;
+  public $lastEmailSendDate;
+  public $unsubscribe;
   public $workflowId;
 
 
@@ -994,6 +1002,22 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersSubscriberMessages
   public function getId()
   {
     return $this->id;
+  }
+  public function setLastEmailSendDate($lastEmailSendDate)
+  {
+    $this->lastEmailSendDate = $lastEmailSendDate;
+  }
+  public function getLastEmailSendDate()
+  {
+    return $this->lastEmailSendDate;
+  }
+  public function setUnsubscribe($unsubscribe)
+  {
+    $this->unsubscribe = $unsubscribe;
+  }
+  public function getUnsubscribe()
+  {
+    return $this->unsubscribe;
   }
   public function setWorkflowId($workflowId)
   {
@@ -1009,11 +1033,19 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersSubscriberMessages
 {
   protected $internal_gapi_mappings = array(
         "arrivalDate" => "arrival_date",
+        "isSubscribe" => "is_subscribe",
+        "lastEmailSendDate" => "last_email_send_date",
+        "lastEmailTime" => "last_email_time",
+        "unsubscribeTime" => "unsubscribe_time",
         "workflowId" => "workflow_id",
   );
   public $arrivalDate;
   public $email;
   public $id;
+  public $isSubscribe;
+  public $lastEmailSendDate;
+  public $lastEmailTime;
+  public $unsubscribeTime;
   public $workflowId;
 
 
@@ -1040,6 +1072,38 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersSubscriberMessages
   public function getId()
   {
     return $this->id;
+  }
+  public function setIsSubscribe($isSubscribe)
+  {
+    $this->isSubscribe = $isSubscribe;
+  }
+  public function getIsSubscribe()
+  {
+    return $this->isSubscribe;
+  }
+  public function setLastEmailSendDate($lastEmailSendDate)
+  {
+    $this->lastEmailSendDate = $lastEmailSendDate;
+  }
+  public function getLastEmailSendDate()
+  {
+    return $this->lastEmailSendDate;
+  }
+  public function setLastEmailTime($lastEmailTime)
+  {
+    $this->lastEmailTime = $lastEmailTime;
+  }
+  public function getLastEmailTime()
+  {
+    return $this->lastEmailTime;
+  }
+  public function setUnsubscribeTime($unsubscribeTime)
+  {
+    $this->unsubscribeTime = $unsubscribeTime;
+  }
+  public function getUnsubscribeTime()
+  {
+    return $this->unsubscribeTime;
   }
   public function setWorkflowId($workflowId)
   {
