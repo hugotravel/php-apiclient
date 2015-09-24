@@ -1036,6 +1036,7 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersSubscriberMessages
         "isSubscribe" => "is_subscribe",
         "lastEmailSendDate" => "last_email_send_date",
         "lastEmailTime" => "last_email_time",
+        "subscribeTime" => "subscribe_time",
         "unsubscribeTime" => "unsubscribe_time",
         "workflowId" => "workflow_id",
   );
@@ -1045,6 +1046,7 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersSubscriberMessages
   public $isSubscribe;
   public $lastEmailSendDate;
   public $lastEmailTime;
+  public $subscribeTime;
   public $unsubscribeTime;
   public $workflowId;
 
@@ -1096,6 +1098,14 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersSubscriberMessages
   public function getLastEmailTime()
   {
     return $this->lastEmailTime;
+  }
+  public function setSubscribeTime($subscribeTime)
+  {
+    $this->subscribeTime = $subscribeTime;
+  }
+  public function getSubscribeTime()
+  {
+    return $this->subscribeTime;
   }
   public function setUnsubscribeTime($unsubscribeTime)
   {
