@@ -47,7 +47,7 @@ class hugo_travel_club_appspot_com_Service_HugoTravel extends Google_Service
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://hugo-travel-club.appspot.com/_ah/api';
+    $this->rootUrl = 'https://hugo-travel-club.appspot.com/_ah/api/';
     $this->servicePath = 'hugotravel/v1/';
     $this->version = 'v1';
     $this->serviceName = 'hugotravel';
@@ -593,7 +593,11 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersEmailMessagesEmail
 {
   protected $collection_key = 'to';
   protected $internal_gapi_mappings = array(
+        "fromEmail" => "from_email",
+        "fromName" => "from_name",
   );
+  public $fromEmail;
+  public $fromName;
   public $html;
   public $subject;
   protected $tagsType = 'Hugo_Travel_Club_Appspot_Com_Service_HugoTravel_HandlersEmailMessagesEmailTagsMessage';
@@ -602,6 +606,22 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersEmailMessagesEmail
   protected $toDataType = 'array';
 
 
+  public function setFromEmail($fromEmail)
+  {
+    $this->fromEmail = $fromEmail;
+  }
+  public function getFromEmail()
+  {
+    return $this->fromEmail;
+  }
+  public function setFromName($fromName)
+  {
+    $this->fromName = $fromName;
+  }
+  public function getFromName()
+  {
+    return $this->fromName;
+  }
   public function setHtml($html)
   {
     $this->html = $html;
@@ -1349,10 +1369,14 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersWorkflowMessagesWo
   protected $internal_gapi_mappings = array(
         "archiveUrl" => "archive_url",
         "destinationId" => "destination_id",
+        "fromEmail" => "from_email",
+        "fromName" => "from_name",
         "unsubscriptionUrl" => "unsubscription_url",
   );
   public $archiveUrl;
   public $destinationId;
+  public $fromEmail;
+  public $fromName;
   public $id;
   protected $itemsType = 'Hugo_Travel_Club_Appspot_Com_Service_HugoTravel_HandlersWorkflowMessagesWorkflowItemMessage';
   protected $itemsDataType = 'array';
@@ -1376,6 +1400,22 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersWorkflowMessagesWo
   public function getDestinationId()
   {
     return $this->destinationId;
+  }
+  public function setFromEmail($fromEmail)
+  {
+    $this->fromEmail = $fromEmail;
+  }
+  public function getFromEmail()
+  {
+    return $this->fromEmail;
+  }
+  public function setFromName($fromName)
+  {
+    $this->fromName = $fromName;
+  }
+  public function getFromName()
+  {
+    return $this->fromName;
   }
   public function setId($id)
   {

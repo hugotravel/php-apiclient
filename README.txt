@@ -1,7 +1,7 @@
 PHP library for Hugo Travel API v1
 
 
-Created on 2015-09-24 at 13:04:33 UTC
+Created on 2015-10-27 at 09:48:41 UTC
 
 Requirements:
 
