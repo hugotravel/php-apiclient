@@ -595,10 +595,12 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersEmailMessagesEmail
   protected $internal_gapi_mappings = array(
         "fromEmail" => "from_email",
         "fromName" => "from_name",
+        "sendAt" => "send_at",
   );
   public $fromEmail;
   public $fromName;
   public $html;
+  public $sendAt;
   public $subject;
   protected $tagsType = 'Hugo_Travel_Club_Appspot_Com_Service_HugoTravel_HandlersEmailMessagesEmailTagsMessage';
   protected $tagsDataType = 'array';
@@ -629,6 +631,14 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersEmailMessagesEmail
   public function getHtml()
   {
     return $this->html;
+  }
+  public function setSendAt($sendAt)
+  {
+    $this->sendAt = $sendAt;
+  }
+  public function getSendAt()
+  {
+    return $this->sendAt;
   }
   public function setSubject($subject)
   {
@@ -1371,6 +1381,7 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersWorkflowMessagesWo
         "destinationId" => "destination_id",
         "fromEmail" => "from_email",
         "fromName" => "from_name",
+        "sendAtHour" => "send_at_hour",
         "unsubscriptionUrl" => "unsubscription_url",
   );
   public $archiveUrl;
@@ -1382,6 +1393,7 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersWorkflowMessagesWo
   protected $itemsDataType = 'array';
   public $locale;
   public $name;
+  public $sendAtHour;
   public $unsubscriptionUrl;
 
 
@@ -1448,6 +1460,14 @@ class hugo_travel_club_appspot_com_Service_HugoTravel_HandlersWorkflowMessagesWo
   public function getName()
   {
     return $this->name;
+  }
+  public function setSendAtHour($sendAtHour)
+  {
+    $this->sendAtHour = $sendAtHour;
+  }
+  public function getSendAtHour()
+  {
+    return $this->sendAtHour;
   }
   public function setUnsubscriptionUrl($unsubscriptionUrl)
   {
